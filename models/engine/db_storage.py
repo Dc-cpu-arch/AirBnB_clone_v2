@@ -16,6 +16,7 @@ from sqlalchemy.orm import scoped_session
 from os import getenv
 classes = [State, City, User, Review, Place]
 
+
 class DBStorage:
     """ SQLAlchemy database storage class """
 
