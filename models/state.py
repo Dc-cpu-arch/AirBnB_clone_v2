@@ -19,6 +19,7 @@ class State(BaseModel, Base):
             """Getter for cities from the same state"""
             instance_list = []
             for key, val in models.storage.all().items():
-                if val.__class__.__name__ == 'City' and val.state._id == self.id:
+                if val.__class__.__name__ == 'City'
+                and val.state._id == self.id:
                     instance_list.append(val)
             return instance_list
